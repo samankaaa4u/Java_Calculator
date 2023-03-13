@@ -30,96 +30,82 @@ public class Submission_Task {
             return;
         }
 
-        while(operator != 1 && operator != 2 && operator != 3 && operator !=4){
-            System.out.println("Invalid Input! Please try again.");
-            System.out.print("> ");
-            try {
-                operator = sc.nextFloat();
+        // If else statement for letting user choose operator from whatever he/she wants
+        if (operator == 1) {
+            // Prompt user for First Number and Second Number
+            try{
+                System.out.print("First Number: ");
+                x = sc.nextFloat();
+
+                System.out.print("Second Number: ");
+                y = sc.nextFloat();
+
+                // Executing the operator
+                System.out.println("Result is: " + (x + y));
             }
-            
+
             catch (Exception e) {
                 System.out.println("Invalid Input! Please enter a number.");
                 return;
             }
+        }
 
-            // If else statement for letting user choose operator from whatever he/she wants
-            if (operator == 1) {
+        else if (operator == 2) {
+            try{
                 // Prompt user for First Number and Second Number
-                try{
-                    System.out.print("First Number: ");
-                    x = sc.nextFloat();
+                System.out.print("First Number: ");
+                x = sc.nextFloat();
 
-                    System.out.print("Second Number: ");
-                    y = sc.nextFloat();
+                System.out.print("Second Number: ");
+                y = sc.nextFloat();
 
-                    // Executing the operator
-                    System.out.println("Result is: " + (x + y));
-                }
-
-                catch (Exception e) {
-                    System.out.println("Invalid Input! Please enter a number.");
-                    return;
-                }
+                // Executing the operator
+                System.out.println("Result is: " + (x - y));
             }
 
-            else if (operator == 2) {
-                try{
-                    // Prompt user for First Number and Second Number
-                    System.out.print("First Number: ");
-                    x = sc.nextFloat();
+            catch (Exception e) {
+                System.out.println("Invalid Input! Please enter a number.");
+                return;
+            }
+        }
 
-                    System.out.print("Second Number: ");
-                    y = sc.nextFloat();
+        else if (operator == 3) {
+            try{
+                // Prompt user for First Number and Second Number
+                System.out.print("First Number: ");
+                x = sc.nextFloat();
 
-                    // Executing the operator
-                    System.out.println("Result is: " + (x - y));
-                }
+                System.out.print("Second Number: ");
+                y = sc.nextFloat();
 
-                catch (Exception e) {
-                    System.out.println("Invalid Input! Please enter a number.");
-                    return;
-                }
+                // Executing the operator
+                System.out.println("Result is: " + (x * y));
             }
 
-            else if (operator == 3) {
-                try{
-                    // Prompt user for First Number and Second Number
-                    System.out.print("First Number: ");
-                    x = sc.nextFloat();
 
-                    System.out.print("Second Number: ");
-                    y = sc.nextFloat();
+            catch (Exception e) {
+                System.out.println("Invalid Input! Please enter a number.");
+                return;
+            }
+        }
 
-                    // Executing the operator
-                    System.out.println("Result is: " + (x * y));
-                }
+        else if (operator == 4) {
+            try{
+                // Prompt user for First Number and Second Number
+                System.out.print("First Number: ");
+                x = sc.nextFloat();
 
+                System.out.print("Second Number: ");
+                y = sc.nextFloat();
 
-                catch (Exception e) {
-                    System.out.println("Invalid Input! Please enter a number.");
-                    return;
-                }
+                // Executing the operator
+                System.out.println("Result is: " + (x / y));
             }
 
-            else if (operator == 4) {
-                try{
-                    // Prompt user for First Number and Second Number
-                    System.out.print("First Number: ");
-                    x = sc.nextFloat();
-
-                    System.out.print("Second Number: ");
-                    y = sc.nextFloat();
-
-                    // Executing the operator
-                    System.out.println("Result is: " + (x / y));
-                }
-
-                catch (Exception e) {
-                    System.out.println("Invalid Input! Please enter a number.");
-                    return;
-                }
+            catch (Exception e) {
+                System.out.println("Invalid Input! Please enter a number.");
+                return;
             }
-
         }
 
         // Prompt user for Trying again
